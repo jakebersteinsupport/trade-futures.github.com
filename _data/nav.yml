@@ -1,0 +1,99 @@
+# _data/nav.yml
+# Main navigation (mirrors Hugo menus.main)
+main:
+  - name: Home
+    url: "/"
+    children:
+      - name: Welcome
+        url: "http://www.trade-futures.com/welcome.php"
+      - name: Tips & Ideas
+        url: "http://www.trade-futures.com/tipsandideas.php"
+      - name: Trading Essentials
+        url: "http://www.trade-futures.com/essentialrules.php"
+      - name: Website Map
+        url: "http://www.trade-futures.com/sitemap.php"
+      - name: FAQs
+        url: "http://www.trade-futures.com/faqs.php"
+      - name: External Links
+        url: "http://www.trade-futures.com/externallinks.php"
+      - name: Seasonal Trader
+        url: "http://www.seasonaltrader.com/"
+
+  - name: Login Area
+    url: "http://www.trade-futures.com/login.html"
+
+  - name: About Jake
+    url: "http://www.trade-futures.com/aboutjake.php"
+    children:
+      - name: More about Jake
+        url: "http://www.trade-futures.com/moreaboutjake.php"
+      - name: Testimonials
+        url: "http://www.trade-futures.com/testimonials.php"
+      - name: Critic Response
+        url: "http://www.trade-futures.com/response.php"
+      - name: Audio Message
+        url: "/audio/hearJake.mp3"
+      - name: Consulting
+        url: "http://www.trade-futures.com/consulting.php"
+      - name: "Jake's BLOG"
+        url: "http://jake-bernstein.blogspot.com/"
+      - name: Ask Jake!
+        url: "http://www.trade-futures.com/askjake.php"
+
+  - name: Bookstore
+    url: "http://www.netpressorders.com/shopping/catalog"
+    children:
+      - name: Books by Jake
+        url: "http://netpressorders.com/shopping//catalog/index.php?cPath=1_37"
+      - name: Power Momentum
+        url: "http://www.trade-futures.com/powermomentum.php"
+      - name: Training Courses
+        url: "http://www.trade-futures.com/tradingcourses.php"
+      - name: Trading Systems
+        url: "http://www.trade-futures.com/onlinetradingsystems.php"
+      - name: Webinar Collections
+        url: "http://netpressorders.com/shopping//catalog/index.php?cPath=38"
+      - name: Weekly Charts
+        url: "http://www.trade-futures.com/dealoftheweek.php"
+
+  - name: Subscriptions
+    url: "http://www.netpressorders.com/access/catalog"
+    children:
+      - name: Daily Sentiment Index
+        url: "http://www.trade-futures.com/dailyindex.php"
+      - name: The DSI Report
+        url: "http://www.trade-futures.com/DsiReport.html"
+      - name: Futures Newsletter
+        url: "http://www.netpressorders.com/access/catalog/product_info.php?cPath=23&products_id=57"
+      - name: Stock Newsletter
+        url: "http://www.netpressorders.com/access/catalog/index.php?cPath=23"
+      - name: COT Newsletter
+        url: "http://www.trade-futures.com/weeklycot.php"
+      - name: Webinars Online
+        url: "http://www.trade-futures.com/webinars.php"
+
+  - name: Order by Skill
+    url: "http://www.trade-futures.com/beginner.php"
+    children:
+      - name: Beginner
+        url: "http://www.trade-futures.com/beginner.php"
+      - name: Intermediate
+        url: "http://www.trade-futures.com/intermediate.php"
+      - name: Advanced
+        url: "http://www.trade-futures.com/advanced.php"
+      - name: Trials & Samples
+        url: "http://www.trade-futures.com/trialsandsamples.php"
+
+sidebar:
+  - name: Home Page
+    url: "/"
+  - name: Login Area
+    url: "http://www.trade-futures.com/login.html"
+  - name: About Jake
+    url: "http://www.trade-futures.com/aboutjake.php"
+  - name: "Jake's Bookstore"
+    url: "http://www.netpressorders.com/shopping//catalog/"
+  - name: Subscription Center
+    url: "http://www.netpressorders.com/access/catalog/"
+  - name: Order by Skill
+    url: "http://www.trade-futures.com/beginner.php"

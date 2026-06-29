@@ -1,0 +1,183 @@
+---
+layout: default
+title: "Home"
+description: "Official home of Jake Bernstein, internationally recognized futures analyst, trader educator and author."
+
+whats_new_title: "WHAT'S NEW FOR TRADERS AND INVESTORS"
+
+promo_images:
+  - src: "http://www.trade-futures.com/la_seminar.jpg"
+    alt: "LA Seminar"
+    url: "http://designlabinteractive.com/nwp/LA_seminar_2010/los_angeles_seminar.html"
+  - src: "http://www.trade-futures.com/trad_sys_dev_2.jpg"
+    alt: "Trading System Development"
+    url: "http://designlabinteractive.com/nwp/developer_sessions/trading_system_5.html"
+
+featured_module:
+  title: "Setup, Trigger & Follow-Through - MetaStock™ Module"
+  url: "http://www.equis.com/whc/jbernstein.aspx"
+  description: '<strong>Free!</strong> Month of <a href="http://www.equis.com/whc/jbernstein.aspx"><img src="http://www.trade-futures.com/images/metastock_logo_blue.gif" alt="MetaStock" class="align-middle"></a>™ with Jake''s Trading Module'
+
+cta:
+  text: "True value and 100% objective methods. Futures, Stocks, FOREX, Short-term Day-Trading and Investing Tools."
+  url: "http://designlabinteractive.com/nwp/LA_seminar_2010/los_angeles_seminar.html"
+  link_label: "Click here to register!"
+
+featured_products:
+  - name: "Daily Sentiment Index US & Europe"
+    url: "http://www.trade-futures.com/dailyindex.html"
+    description: "Jake's Top-Notch Contrary Opinion Indicators"
+  - name: "Seasonal Cash Chart Array Analysis"
+    url: "http://netpressorders.com/access//catalog/product_info.php?cPath=32&products_id=91"
+    description: "Study of Monthly Seasonal Commodity Prices"
+    preview_url: "http://www.Trade-Futures.com/scc.pdf"
+  - name: "Seasonal Traders Bible 2010 Edition"
+    url: "http://netpressorders.com/access//catalog/product_info.php?products_id=184"
+    description: "Over 200 of the Best High Odds Seasonal Trades"
+
+subscription_center:
+  title: "Webinar Subscription Center"
+  url: "http://www.netpressorders.com/access/catalog/"
+  description: "Webinars, Newsletters, PDF Books, Charting Services, Online Training, Trading Courses & Trading Systems"
+
+bookstore:
+  title: "Jake's Book Store"
+  url: "http://www.netpressorders.com/shopping/catalog/"
+  description: "Audio Tapes, DVD's & CD's, Traditional Books & Webinar Collections"
+  featured_image:
+    src: "http://www.trade-futures.com/images/Ultimate_trader.gif"
+    alt: "Ultimate Trader"
+    url: "http://netpressorders.com/shopping//catalog/product_info.php?products_id=241"
+
+webinars:
+  title: "Jake Bernstein's Complete Webinar List"
+  url: "http://www.trade-futures.com/webinars.html"
+  tagline: "Save Time! Save Gas! Save Money! Learn More!"
+
+system_groups:
+  - heading: "Jake's Trading Systems"
+    items:
+      - name: "Bernstein Trend Index System"
+        url: "http://www.trade-futures.com/tradingsystem.html"
+      - name: "Bonds are Back Trading System"
+        url: "http://www.trade-futures.com/tradingsystem.html"
+      - name: "Electronic Futures Trading System"
+        url: "http://www.trade-futures.com/tradingsystem.html"
+      - name: "BTI 2010 Trading System Upgrade"
+        url: "http://www.trade-futures.com/tradingsystem.html"
+      - name: "Electronic Currency Trading System II"
+        url: "http://www.trade-futures.com/tradingsystem.html"
+      - name: "Day at a Time Trading System"
+        url: "http://www.trade-futures.com/tradingsystem.html"
+      - name: "Major Trend Trader Trading System"
+        url: "http://www.trade-futures.com/tradingsystem.html"
+      - name: "Short-Term Trade Generator System"
+        url: "http://www.trade-futures.com/tradingsystem.html"
+      - name: "Weekly Trend Grabber Trading System"
+        url: "http://www.trade-futures.com/tradingsystem.html"
+  - heading: "System Development Webinars"
+    items:
+      - name: "System Development Webinar I"
+        url: "http://netpressorders.com/access//catalog/product_info.php?cPath=25&products_id=102"
+      - name: "System Development Webinar II"
+        url: "http://netpressorders.com/access//catalog/product_info.php?cPath=25&products_id=106"
+      - name: "System Development Webinar III"
+        url: "http://netpressorders.com/access//catalog/product_info.php?cPath=25&products_id=117"
+      - name: "System Development Webinar IV"
+        url: "http://netpressorders.com/access//catalog/product_info.php?cPath=25&products_id=178"
+---
+
+<!-- What's New -->
+<div class="card mb-3">
+  <div class="card-header fw-bold">{{ page.whats_new_title }}</div>
+  <div class="card-body">
+    {% if page.promo_images %}
+    <div class="d-flex flex-wrap justify-content-around mb-3">
+      {% for img in page.promo_images %}
+      <a href="{{ img.url }}" class="m-1">
+        <img src="{{ img.src }}" alt="{{ img.alt }}" class="img-fluid" style="max-width:200px;">
+      </a>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+    {% if page.featured_module %}
+    <p class="mb-2">
+      <a href="{{ page.featured_module.url }}"><strong>{{ page.featured_module.title }}</strong></a><br>
+      {{ page.featured_module.description }}
+    </p>
+    {% endif %}
+
+    {% if page.cta %}
+    <p class="mb-0">
+      {{ page.cta.text }}<br>
+      <a href="{{ page.cta.url }}"><strong>{{ page.cta.link_label }}</strong></a>
+    </p>
+    {% endif %}
+  </div>
+</div>
+
+<!-- Featured Products -->
+<div class="card mb-3">
+  <div class="card-header fw-bold">FEATURED PRODUCTS</div>
+  <div class="card-body p-0">
+    <ul class="list-group list-group-flush">
+      {% for product in page.featured_products %}
+      <li class="list-group-item">
+        <a href="{{ product.url }}"><strong>{{ product.name }}</strong></a>
+        {% if product.preview_url %}<a href="{{ product.preview_url }}" class="ms-2 small">[Preview]</a>{% endif %}<br>
+        <span class="text-muted small">{{ product.description }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
+<!-- Subscription / Bookstore -->
+<div class="card mb-3">
+  <div class="card-body">
+    <div class="row g-3">
+      <div class="col-12 col-sm-6">
+        <h6><a href="{{ page.subscription_center.url }}">{{ page.subscription_center.title }}</a></h6>
+        <p class="text-muted small mb-2">{{ page.subscription_center.description }}</p>
+        <p class="small mb-0">If you have difficulty accessing our Book Store or Subscription Center — Call: <strong>{{ site.phone_tollfree }}</strong> or <strong>{{ site.phone_primary }}</strong></p>
+      </div>
+      <div class="col-12 col-sm-6 border-start">
+        <h6><a href="{{ page.bookstore.url }}">{{ page.bookstore.title }}</a></h6>
+        <p class="text-muted small mb-2">{{ page.bookstore.description }}</p>
+        {% if page.bookstore.featured_image %}
+        <div class="text-center">
+          <a href="{{ page.bookstore.featured_image.url }}">
+            <img src="{{ page.bookstore.featured_image.src }}" alt="{{ page.bookstore.featured_image.alt }}" class="img-fluid" style="max-width:140px;">
+          </a>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Webinars & Trading Systems -->
+<div class="card mb-3">
+  <div class="card-body">
+    <div class="row g-3">
+      <div class="col-12 col-sm-5">
+        <h6><a href="{{ page.webinars.url }}">{{ page.webinars.title }}</a></h6>
+        <p class="text-muted small mb-2">{{ page.webinars.tagline }}</p>
+        <p class="small mb-0">To reserve your spot or for more information click above <em>or</em> call: <strong>{{ site.phone_tollfree }}</strong> or <strong>{{ site.phone_primary }}</strong></p>
+      </div>
+      <div class="col-12 col-sm-7 border-start">
+        {% for group in page.system_groups %}
+        <h6 class="text-uppercase fw-bold">{{ group.heading }}</h6>
+        <ul class="list-unstyled small mb-3">
+          {% for item in group.items %}
+          <li><a href="{{ item.url }}" class="text-decoration-none">{{ item.name }}</a></li>
+          {% endfor %}
+        </ul>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<img src="http://www.trade-futures.com/images/line_bottom.gif" alt="" class="img-fluid d-block w-100 mb-2">
